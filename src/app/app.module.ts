@@ -3,16 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddtaskComponent } from './addtask/addtask.component';
+import { ViewtaskComponent } from './viewtask/viewtask.component';
+import { TasksService } from './tasks.service';
+import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { TasksearchPipe } from './tasksearch.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddtaskComponent,
+    ViewtaskComponent,
+    TasksearchPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxSpinnerModule
   ],
-  providers: [],
+  providers: [TasksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

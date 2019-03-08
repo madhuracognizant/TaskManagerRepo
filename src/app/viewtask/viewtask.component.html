@@ -1,0 +1,50 @@
+<head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </head>
+<p *ngIf="!tasks"><em>Loading...</em></p>
+<br/>
+<div>
+    <b>Task :</b> <input type="text" [(ngModel)]="tasknameSearch"/>
+    <b>Parent Task :</b><input type="text" [(ngModel)]="parentTasknameSearch"/>
+</div>
+<div>
+    <b>Priority From :</b><input type="text" [(ngModel)]="priorityFromSearch"/>
+    <b>Priority To :</b><input type="text" [(ngModel)]="priorityToSearch"/>
+    <b>Start Date :</b><input type="text" [(ngModel)]="startDateSearch"/>
+    <b>End Date :</b><input type="text" [(ngModel)]="endDateSearch"/>
+</div>
+<table class='table' *ngIf="tasks">
+    <thead>
+        <tr>
+            <th scope="col"><b>Task</b></th>
+            <th scope="col"><b>Parent</b></th>
+            <th scope="col"><b>Priority</b></th>
+            <th scope="col"><b>Start</b></th>
+            <th scope="col"><b>End</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let task of tasks | tasksearch : tasknameSearch : parentTasknameSearch : priorityFromSearch : priorityToSearch : startDateSearch 
+        : endDateSearch">
+            <tr>
+                <td>{{ task.taskName }}</td>
+                <td>{{ task.parentTaskName }}</td>
+                <td>{{ task.priority }}</td>
+                <td>{{ task.startDate | date: 'dd/MM/yyyy' }}</td>
+                <td>{{ task.endDate | date: 'dd/MM/yyyy' }}</td>
+                <td>
+                <td>
+                    <!-- <a [routerLink]="['/task/edit/', task.task_ID]">   Edit  |</a>
+                    <a [routerLink]="" (click)="endtask(employee.id)">   </a> -->
+                <button [disabled]="task.isFinished" (click)="editTask(task.task_ID)" class="btn btn-default">Edit</button>
+                <button [disabled]="task.isFinished" (click)="endTask(task.task_ID)" class="btn btn-default"> End Task</button>
+                </td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
