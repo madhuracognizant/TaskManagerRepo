@@ -14,7 +14,7 @@ namespace TaskManagerDAL
         {
             Configuration.LazyLoadingEnabled = false;
         }
-        public DbSet<Task> Tasks { get; set; }
+        public virtual DbSet<Task> Tasks { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer<TasksContext>(null);

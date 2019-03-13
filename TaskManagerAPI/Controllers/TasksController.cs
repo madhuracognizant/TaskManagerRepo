@@ -13,8 +13,8 @@ namespace TaskManagerAPI.Controllers
     public class TasksController : ApiController
     {
 
-        private TasksRepository _repository;
-        public TasksController(TasksRepository repository)
+        private ITasksRepository _repository;
+        public TasksController(ITasksRepository repository)
         {
             _repository = repository;
         }
@@ -113,10 +113,6 @@ namespace TaskManagerAPI.Controllers
             });
         }
 
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
 
         // DELETE api/values/5
         [HttpDelete]

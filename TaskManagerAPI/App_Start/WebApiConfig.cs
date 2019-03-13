@@ -29,7 +29,8 @@ namespace TaskManagerAPI
 
             var container = new UnityContainer();
 
-            container.RegisterType<IRepository<Task>, TasksRepository>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IRepository<Task>, ITasksRepository>(new ContainerControlledLifetimeManager());
+            container.RegisterType<ITasksRepository, TasksRepository>(new ContainerControlledLifetimeManager());
             container.RegisterType<DbContext, TasksContext>();
 
             config.DependencyResolver = new UnityResolver(container);

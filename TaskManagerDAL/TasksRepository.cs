@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace TaskManagerDAL
 {
-    public class TasksRepository : IRepository<Task>
+    public class TasksRepository : ITasksRepository
     {
-        protected DbContext _context;
-        protected readonly IDbSet<Task> _dbset;
+        public DbContext _context;
+        public IDbSet<Task> _dbset;
 
         public TasksRepository(DbContext context)
         {
