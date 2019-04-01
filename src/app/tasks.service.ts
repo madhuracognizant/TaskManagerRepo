@@ -9,8 +9,8 @@ import { ITask } from './addtask/addtask.component';
 
 @Injectable()
 export class TasksService {
-    //private BASE_URL = 'http://localhost/TaskManagerAPI/api/Tasks/';
-	private BASE_URL = 'http://localhost:49483/api/tasks/';
+    private BASE_URL = 'http://localhost/TaskManagerAPI/api/Tasks/';
+	//private BASE_URL = 'http://localhost:49483/api/tasks/';
     constructor(private _http: Http) { }
 
     
