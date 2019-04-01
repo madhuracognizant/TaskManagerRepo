@@ -8,15 +8,19 @@
       </head>
 <p *ngIf="!tasks"><em>Loading...</em></p>
 <br/>
-<div>
+
+<div class="col-md-4 col-md-offset-4">
     <b>Task :</b> <input type="text" [(ngModel)]="tasknameSearch"/>
     <b>Parent Task :</b><input type="text" [(ngModel)]="parentTasknameSearch"/>
 </div>
-<div>
+
+<div class="col-md-4 col-md-offset-4">
     <b>Priority From :</b><input type="text" [(ngModel)]="priorityFromSearch"/>
-    <b>Priority To :</b><input type="text" [(ngModel)]="priorityToSearch"/>
-    <b>Start Date :</b><input type="text" [(ngModel)]="startDateSearch"/>
-    <b>End Date :</b><input type="text" [(ngModel)]="endDateSearch"/>
+    <br/><b>Priority To :</b><input type="text" [(ngModel)]="priorityToSearch"/>
+</div>
+<div class="col-md-4 col-md-offset-4">
+    <b>Start Date :</b><input type="text" [(ngModel)]="startDateSearch"/> 
+     <b>End Date :</b><input type="text" [(ngModel)]="endDateSearch"/>
 </div>
 <table class='table' *ngIf="tasks">
     <thead>
