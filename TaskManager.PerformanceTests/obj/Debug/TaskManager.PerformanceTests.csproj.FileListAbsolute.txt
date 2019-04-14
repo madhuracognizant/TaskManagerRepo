@@ -1,0 +1,13 @@
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\TaskManager.PerformanceTests.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\TaskManager.PerformanceTests.pdb
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\NBench.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\obj\Debug\TaskManager.PerformanceTests.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\obj\Debug\TaskManager.PerformanceTests.dll
+C:\Users\Administrator\documents\visual studio 2017\Projects\TaskManagerAPI\TaskManager.PerformanceTests\obj\Debug\TaskManager.PerformanceTests.pdb
